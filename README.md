@@ -42,17 +42,6 @@ Info-Points is a responsive web application designed for **3rd-year BSc.IT stude
 
 ---
 
-## 📂 Folder Structure (Optional)
-📁 info-points/
-│
-├── 📄 index.html
-├── 📄 style.css
-├── 📄 script.js
-├── 📁 assets/
-│ └── 📄 images, icons, etc.
-
----
-
 ## 👤 Author
 
 **Rupesh Thakur**  
