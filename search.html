@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Details</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="search-bar-style.css">
+  <link rel="website icon" href="image/logo2.png" type="png">
+
+</head>
+
+<body>
+  <header>
+    <!-- navigration -->
+    <nav>
+
+      <!-- This part for Mobile  size -->
+      <ul class="sidebar">
+        <li onclick=closeSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px"
+              viewBox="0 -960 960 960" width="28px" fill="black">
+              <path
+                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+            </svg></a></li>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href="search.html">Search</a></li>
+        <li><a href="syllabus.html">Syllabus</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+
+      <!-- This part for desktop size -->
+      <ul>
+        <li><a href="#">INFO-POINT</a></li>
+        <li class="hideOnMobile"><a href='index.html'>HOME</a></li>
+        <li class="hideOnMobile"><a href="search.html">SEARCH</a></li>
+        <li class="hideOnMobile"><a href="syllabus.html">SYLLABUS</a></li>
+        <li class="hideOnMobile"><a href="about.html">ABOUT</a></li>
+        <li class="menubutton" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="28px"
+              viewBox="0 -960 960 960" width="28px" fill="black">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
+            </svg></a></li>
+      </ul>
+    </nav>
+  </header>
+  <section class="swiper mySwiper">
+
+    <div class="swiper-wrapper" id="userCards"> 
+
+      <!-- Static Cards -->
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="image/rupesh.png" alt="card image">
+        </div>
+        <div class="card__content">
+          <span class="card__title">Rupesh thakur</span>
+          <span class="card__name">BSC.IT Student</span>
+          <p class="card__text">I am Student at TCSC Collage.I AM DIFFREENT FROM OTHER AND ALSO LIKES A CYBER EXPERT TO
+            EXPOSE THE PRIVECY OF PEOPLE</p>
+          <button class="card__btn"><a href='1.html' target='_blank'>View More</A></button>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="image/alok.png" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Alok Yadav
+          </span>
+          <span class="card__name">BSC.IT Student</span>
+          <p class="card__text">I am Alok Yadav.Studying in FYBSC.IT in Thakur collage of science and commerce.</p>
+          <button class="card__btn"><a href='2.html' target='_blank'>View More</A></button>
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="image/ashu.png" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">ashu gupta</span>
+          <span class="card__name">BSC.IT Student</span>
+          <p class="card__text">I am ashu gupta. Studying in FYBSC.IT in Thakur collage of science and commerce.</p>
+          <button class="card__btn"><a href='3.html' target='_blank'>View More</A></button>
+        </div>
+      </div>
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="image/sana.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">sana sayyad</span>
+          <span class="card__name">BSC.IT Student</span>
+          <p class="card__text">I'm Sana Sayyad currently studying in the class fybscit B in the field bachelor of
+            science....</p>
+          <button class="card__btn"><a href='5.html' target='_blank'>View More</A></button>
+        </div>
+      </div>
+
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="image/vaibhav.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Vaibhav jagtap</span>
+          <span class="card__name">BSC.IT Student</span>
+          <p class="card__text">I am Vaibhav v. jagtap. Studying in FYBSC.IT in Thakur collage of science and commerce.
+          </p>
+          <button class="card__btn"><a href='4.html' target='_blank'>View More</A></button>
+        </div>
+      </div>
+
+    </div>
+    </div>
+  </section>  
+  <!-- footer -->
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+      <h3>INfo<span>Point</span></h3>
+
+      <p class="footer-links">
+        <a href='index.html'>Home</a>
+        |
+        <a href='search.html'>Search</a>
+        |
+        <a href='syllabus.html'>Syllabus</a>
+        |
+        <a href='about.html'>About</a>
+      </p>
+
+      <p class="footer-name">Copyright © 2023 <strong>Info Point</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <p><span>Mumbai</span>
+          Maharastra</p>
+      </div><br>
+
+      <div>
+        <p>+91 9321738137</p>
+      </div><br>
+      <div>
+        <p><a href="mailto:22rupeshthakur@gmail.com">22rupeshthakur@gmail.com</a></p>
+      </div><br>
+    </div>
+    <div class="footer-right">
+      <p class="footer-about">
+        <span>About the Websites</span>
+        <strong>Info Point</strong> is Websites is made of
+        Effects along with
+        HTML, JavaScript and Projects using C/C++.
+      </p>
+      <div class="footer-icons">
+        <a href="https://www.facebook.com/profile.php?id=100054679285920&mibextid=ZbWKwL" target="_blank"><i
+            class="fa fa-facebook"></i></a>
+        <a href="https://instagram.com/rupesh.devp" target="_blank"><i
+            class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/ar-c-9a37a1224" target="_blank"><i class="fa fa-linkedin"></i></a>
+      </div>
+    </div>
+  </footer>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+    import { getFirestore, collection, getDocs } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-firestore.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAPYOgYNHxUw7FlRRg5fPQAWWhW9Jbqy8k",
+      authDomain: "info-point6786.firebaseapp.com",
+      projectId: "info-point6786",
+      storageBucket: "info-point6786.appspot.com",
+      messagingSenderId: "868803614280",
+      appId: "1:868803614280:web:feee5a246892aca647aa7d",
+      measurementId: "G-X1M3Y2TRQK"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const db = getFirestore(app);
+
+    const userCardsContainer = document.getElementById('userCards');
+
+    async function loadUserCards() {
+      const querySnapshot = await getDocs(collection(db, "registrations"));
+      querySnapshot.forEach((doc) => {
+        const data = doc.data();
+
+        const card = document.createElement('div');
+        card.className = "card swiper-slide";
+        card.innerHTML = `
+        <div class="card__image">
+          <img src="image/default.jpg" alt="card image">
+        </div>
+        <div class="card__content">
+          <span class="card__title">${data.name || "No Name"}</span>
+          <span class="card__name">${data.class || "No Class"}</span>
+          <p class="card__text">${data.about || "No description provided"}</p>
+          <button class="card__btn">
+            <a href="https://instagram.com/${data.instagramID || "#"}" target="_blank">View More</a>
+          </button>
+        </div>
+      `;
+
+        userCardsContainer.appendChild(card);
+      });
+
+      // Initialize Swiper after cards are added
+      new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+        },
+      });
+    }
+    loadUserCards();
+  </script>
+  <script>
+    // function to controll the responsive navigation 
+    function showSidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'flex'
+
+    }
+    function closeSidebar() {
+      const sidebar = document.querySelector('.sidebar')
+      sidebar.style.display = 'none'
+    }
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" type="text/css" href="register-style.css">
+</head>
+
+<body>
+    <!-- ------------- registration form -------------- -->
+    <div class="container">
+        <div class="title">Registration</div>
+        <div class="content">
+            <form id="registerForm">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input id="name" type="text" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Class</span>
+                        <input id="class" type="text" placeholder="Enter your class name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Date of Birth</span>
+                        <input id="dob" type="date" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Gender</span>
+                        <input id="gender" type="text" placeholder="Enter your Gender" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Roll Number</span>
+                        <input id="rollno" type="number" placeholder="Enter your Rollno" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Phone Number</span>
+                        <input id="phone" type="number" placeholder="Enter your Phone number" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Language</span>
+                        <input id="language" type="text" placeholder="Enter Language" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">E-Mail</span>
+                        <input id="email" type="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Instagram ID</span>
+                        <input id="insta" type="text" placeholder="Enter your Instagram ID" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Address</span>
+                        <input id="address" type="text" placeholder="Enter your full Address" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Professional Skills</span>
+                        <input id="skills" type="text" placeholder="Enter your All skills" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Interest</span>
+                        <input id="interest" type="text" placeholder="About your Interest" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">About yourself</span>
+                        <input id="about" type="text" placeholder="About yourself " required>
+                    </div>
+                
+
+                </div>
+                <div class="button">
+                    <input type="submit" value="Register">
+                </div>
+                <div class="button">
+                    <a href="index.html">GO BACK</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- Firebase JS SDK using modules -->
+    <script type="module">
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-app.js";
+        import { getFirestore, collection, addDoc } from "https://www.gstatic.com/firebasejs/11.9.0/firebase-firestore.js";
+    
+        const firebaseConfig = {
+            apiKey: "AIzaSyAPYOgYNHxUw7FlRRg5fPQAWWhW9Jbqy8k",
+            authDomain: "info-point6786.firebaseapp.com",
+            projectId: "info-point6786",
+            storageBucket: "info-point6786.firebasestorage.app",
+            messagingSenderId: "868803614280",
+            appId: "1:868803614280:web:feee5a246892aca647aa7d",
+            measurementId: "G-X1M3Y2TRQK"
+        };
+
+        // Initialize Firebase and Firestore
+        const app = initializeApp(firebaseConfig);
+        const db = getFirestore(app);
+    
+
+        // Handle form submission
+        const form = document.getElementById("registerForm");
+        form.addEventListener("submit", async (e) => {
+            e.preventDefault();
+
+            const data = {
+                name: document.getElementById("name").value,
+                class: document.getElementById("class").value,
+                dob: document.getElementById("dob").value,
+                gender: document.getElementById("gender").value,
+                rollno: document.getElementById("rollno").value,
+                phone: document.getElementById("phone").value,
+                language: document.getElementById("language").value,
+                email: document.getElementById("email").value,
+                insta: document.getElementById("insta").value,
+                address: document.getElementById("address").value,
+                skills: document.getElementById("skills").value,
+                interest: document.getElementById("interest").value,
+                about: document.getElementById("about").value,
+                timestamp: new Date()
+            };
+
+            try {
+                await addDoc(collection(db, "registrations"), data);
+                alert("Registration successful!");
+                form.reset();
+            } catch (err) {
+                console.error("Error adding document: ", err);
+                alert("Failed to register. Check console.");
+            }
+        });
+    </script>
+
+</body>
+
+</html>
