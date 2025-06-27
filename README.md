@@ -47,7 +47,7 @@ Info-Points is a responsive web application designed for **3rd-year BSc.IT stude
 **Rupesh Thakur**  
 🎓 BSc.IT Student, Thakur College of Science and Commerce  
 🔗 [LinkedIn](https://www.linkedin.com/in/rupesh-thakur)  
-📧 Email: rupeshthakur.dev@gmail.com
+📧 Email: 55rupeshthakur@gmail.com
 
 ---
 
