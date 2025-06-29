@@ -23,7 +23,7 @@ Info-Points is a responsive web application designed for **3rd-year BSc.IT stude
 - 📚 View complete subject-wise BSc.IT 3rd-year syllabus  
 - 🧾 Student registration form with real-time Firebase integration  
 - 🧑‍💼 Dynamic and scrollable profile cards for registered users  
-- 🔍 Sidebar with search functionality to view individual resumes  
+- 🔍 Sidebar with functionality to view individual resumes  
 - 📱 Fully responsive design for mobile, tablet, and desktop devices
 
 ---
